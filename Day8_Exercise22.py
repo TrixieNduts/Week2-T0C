@@ -10,7 +10,7 @@ def main():
 
         print(f"{numbers}")#prints the list
 
-        numbers[0]= int(numbers[0])#converts list to int
+        numbers[0] = int(numbers[0])#converts list to int
         numbers[1] = int(numbers[1])#converts list to int
         numbers[2] = int(numbers[2])#converts list to int
 
