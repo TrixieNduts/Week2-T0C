@@ -1,18 +1,20 @@
 import sys
+from profile import Profile
+
 
 def main():
 
-    name = str(input("What is your name: "))#gets use input.
-    age = int(input("What is your age: "))  # gets use input.
-    country = str(input("What is your country of residence: "))  # gets use input.
+    name = str(input("What is your name: "))#gets use input as str.
+    age = int(input("What is your age: "))  # gets use input as int.
+    country = str(input("What is your country of residence: "))  # gets use input as str.
 
-    profile = [name, age, country]  # storing integers in a list.
+    profile = [name, age, country]  # stores values in a list.
 
-    print(f"{profile}")#prints the integers.
+    print(f"Original list: {profile}")#prints the list.
 
-    #nums = [num1 + num2 + num3 + num4]#computes the number list in a list.
+    summary = [profile[0].upper(),profile[1] + 5,profile[2].lower()]
 
-    #print(f"{nums}")#prints the results.
+    print(f"Updated list: {summary}")#prints the results.
 
 if __name__ == "__main__":
     sys.exit(main())
